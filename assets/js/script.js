@@ -1,4 +1,5 @@
 let displayScore = document.getElementById("affichage");
+let clickButton = document.getElementById("click");
 let multiplicateurButton = document.getElementById("multiplier");
 let autoclickerButton = document.getElementById("autoclick");
 let bonusButton = document.getElementById("bonus");
@@ -42,7 +43,10 @@ augmenterScore = () => {
   score = score + 1 * multiplicateur + bonusScore;
   displayScore.innerText = score;
 };
-
+augmenterBonus = () => {
+  score = score - prixBonus;
+  displayScore.innerText = score;
+};
 autoclick = () => {
   score = score - prixAutoClicker;
   displayScore.innerText = score;
@@ -50,7 +54,7 @@ autoclick = () => {
     augmenterScore();
   }, 1000);
 };
-document.getElementById("click").addEventListener("click", () => {
+clickButton.addEventListener("click", () => {
   augmenterScore();
   displayButton();
 });
@@ -58,7 +62,7 @@ document.getElementById("click").addEventListener("click", () => {
 multiplicateurButton.addEventListener("click", (e) => {
   augmenterMultiplicateur();
   multiplicateurButton.innerText =
-    "Multiplicateur x" + multiplicateur + "\nPrix:" + prixMultiplicateur;
+    "Mult x" + multiplicateur + "\nPrix:" + prixMultiplicateur;
   displayButton();
 });
 
@@ -68,6 +72,8 @@ autoclickerButton.addEventListener("click", (e) => {
   displayButton();
 });
 bonusButton.addEventListener("click", (e) => {
+  augmenterBonus();
+
   e.target.setAttribute("disabled", "");
   let secondes = 5;
   var intervalBonusClick = setInterval(function () {
