@@ -15,7 +15,9 @@ window.addEventListener("load", () => {
 
 init = () => {
   multiplicateurButton.innerText =
-    "Multiplicateur x" + multiplicateur + "\nPrix:" + prixMultiplicateur;
+    "Mult x" + multiplicateur + "\nPrix:" + prixMultiplicateur;
+  autoclickerButton.innerText = "Autoclick\nPrix:" + prixAutoClicker;
+  bonusButton.innerText = "Bonus\nPrix:" + prixBonus;
 
   displayButton();
 };

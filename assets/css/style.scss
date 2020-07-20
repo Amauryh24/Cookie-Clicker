@@ -1,28 +1,64 @@
-body {
-  background-color: red;
-  font-size: 16px;
-  .content-cookie {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    ul {
-      //   display: flex;
-      //   flex-direction: column;
-      li {
-        padding: 1em;
-        button {
-          width: 200px;
+html {
+  height: 100%;
+  body {
+    font-size: 16px;
+    line-height: 1.5em;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #594d32;
+    .content-cookie {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      ul {
+        li {
+          &:first-child {
+            line-height: 200px;
+            width: 200px;
+            height: 200px;
+            background-color: #d8bb79;
+          }
           padding: 1em;
-          font-size: 1.3em;
-          text-align: left;
+
+          border-radius: 100%;
+          margin: 0 auto;
+          button {
+            width: 160px;
+            height: 160px;
+            border-radius: 100%;
+            padding: 1em;
+            font-size: 1.3em;
+            font-weight: bold;
+            // text-transform: uppercase;
+            letter-spacing: 0.04em;
+            background-color: #59564d;
+            border: inset 6px #a6905d;
+            // color: #dfd6c0;
+            box-shadow: 0px 0px 10px #000000;
+            &:hover {
+              cursor: pointer;
+              background-color: #dfd6c0;
+            }
+            &:active {
+              background-color: #d8bb79;
+              width: 150px;
+              height: 150px;
+            }
+          }
         }
       }
-    }
-    #affichage {
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-      font-size: 3em;
-      line-height: 3em;
+      #affichage {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 3em;
+        line-height: 200px;
+        width: 200px;
+        height: 200px;
+        background-color: #d8bb79;
+        border-radius: 100px;
+        margin: 0 auto;
+      }
     }
   }
 }
