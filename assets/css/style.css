@@ -20,25 +20,26 @@ body .content-cookie {
 
 body .content-cookie ul li {
   padding: 1em;
-  border-radius: 100%;
   margin: 0 auto;
 }
 
 body .content-cookie ul li:first-child {
-  line-height: 200px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2em;
+  line-height: 0;
   width: 200px;
-  height: 200px;
-  background-color: #d8bb79;
+  border-radius: 30px;
+  border-bottom: inset 6px #a6905d;
 }
 
 body .content-cookie ul li button {
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
   border-radius: 100%;
   padding: 1em;
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: bold;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   background-color: #59564d;
   border: inset 6px #a6905d;
   -webkit-box-shadow: 0px 0px 10px #000000;
@@ -52,18 +53,7 @@ body .content-cookie ul li button:hover {
 
 body .content-cookie ul li button:active {
   background-color: #d8bb79;
-  width: 150px;
-  height: 150px;
-}
-
-body .content-cookie #affichage {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 3em;
-  line-height: 200px;
-  width: 200px;
-  height: 200px;
-  background-color: #d8bb79;
-  border-radius: 100px;
-  margin: 0 auto;
+  width: 120px;
+  height: 120px;
 }
 /*# sourceMappingURL=style.css.map */
