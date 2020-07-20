@@ -1,4 +1,5 @@
 body {
+  padding: 50px 0;
   font-size: 16px;
   line-height: 1.5em;
   height: 100vh;
@@ -66,7 +67,6 @@ body {
     margin: 0 auto;
     text-align: center;
     ul {
-      padding: 50px 0;
       li {
         padding: 1em;
         p {
@@ -110,7 +110,6 @@ body {
 
 @media all and (max-width: 500px) {
   body {
-    // height: 100%;
     font-size: 12px;
     line-height: 1.2em;
     .content-cookie {
